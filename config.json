@@ -1,0 +1,8 @@
+{
+  "location": {
+    "lat": "39.7456",
+    "lng": "-97.0892"
+  },
+  "db_url": "postgresql://digsign:digsign@localhost:5432/digsign",
+  "interval_minutes": 60
+}
