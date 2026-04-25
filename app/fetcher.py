@@ -35,7 +35,7 @@ def fetch_and_store(lat: str, lng: str) -> None:
                 break
             periods.append({"lat": lat, "lng": lng, "forecast_at": start_dt.strftime("%Y-%m-%dT%H:%M:%S"), "temp": p["temperature"]})
 
-        database.insert_forecasts(periods)
+        database.insert_forecast(periods)
         logger.info("Got %d periods for (%s, %s)", len(periods), lat, lng)
 
     except Exception:
